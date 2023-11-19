@@ -191,7 +191,7 @@ autolinker.match_weights_chart()
 
 # COMMAND ----------
 
-records_to_view  = autolinker.best_predictions_df.as_record_dict(limit=5)
+records_to_view  = autolinker.best_predictions_df.as_record_dict(limit=10)
 autolinker.best_linker.waterfall_chart(records_to_view, filter_nulls=False)
 
 # COMMAND ----------
